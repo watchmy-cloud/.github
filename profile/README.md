@@ -2,12 +2,11 @@
 
 A smoke detector for your AWS bill.
 
-watchmy.cloud watches your AWS costs every hour and alerts you when spend jumps — by email, Slack, SMS, JIRA, GitHub Issues or webhook. Built for small teams on AWS without a FinOps department.
+We check your AWS spend every hour. When an hour or a day jumps, we ping you in Slack, email, SMS, Jira, GitHub Issues or a webhook. You find out within hours, not at the end of the month.
 
-- **Website:** [watchmy.cloud](https://watchmy.cloud)
-- **Live demo:** [app.watchmy.cloud/demo](https://app.watchmy.cloud/demo)
+We connect through one read-only role. It can read only your costs. It cannot read anything else, change anything or run anything.
 
-## Repositories
+- [aws-connector](https://github.com/watchmy-cloud/aws-connector): the role you deploy, and exactly what it can do.
+- [examples](https://github.com/watchmy-cloud/examples): code for our webhooks and API.
 
-- [aws-connector](https://github.com/watchmy-cloud/aws-connector) — the read-only IAM role template we ask you to deploy. Review exactly what we can and cannot access.
-- [examples](https://github.com/watchmy-cloud/examples) — code examples for our API and webhooks.
+See it on synthetic but real-looking data: [app.watchmy.cloud/demo](https://app.watchmy.cloud/demo).
